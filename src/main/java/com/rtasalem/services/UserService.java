@@ -1,5 +1,35 @@
 package com.rtasalem.services;
 
-public class UserService {
+import java.util.HashSet;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.rtasalem.models.Role;
+import com.rtasalem.models.User;
+
+@Service
+public class UserService implements UserDetailsService {
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        System.out.println("Location: User details service");
+
+        if (!username.equals("Jordan"))
+            throw new UsernameNotFoundException("You are not Jordan");
+
+        Set<Role> roles = new HashSet<>();
+        roles.add(new Role(1, "USER"));
+
+        return new User(1, "Jordan", passwordEncoder.encode("password"), roles);
+    }
 
 }
