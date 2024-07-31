@@ -24,7 +24,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Role implements GrantedAuthority {
 
-    @Id
+    private static final long serialVersionUID = -1046476777507667313L;
+
+	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "role_id")
     private Integer roleId;
