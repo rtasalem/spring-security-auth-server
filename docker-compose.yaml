@@ -1,0 +1,9 @@
+services:
+  spring-security-auth-server:
+    build: .
+    image: spring-security-auth-server:1.0.0
+    container_name: spring-security-auth-server
+    ports:
+      - "8000:8000"
+    environment:
+      PORT: ${PORT:-8000}
