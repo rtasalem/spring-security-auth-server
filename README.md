@@ -2,7 +2,7 @@
 
 ## Acknowledgements
 
-Credit to [unkownkoder on Youtube](https://www.youtube.com/@unknownkoder) for their tutorial on [How to Create a Login System with Spring Data JPA and JWTs](https://youtu.be/TeBt0Ike_Tk?si=ua8exzVlrdtlj9FD).
+Credit to [unkownkoder on Youtube](https://www.youtube.com/@unknownkoder) for their tutorial on [_How to Create a Login System with Spring Data JPA and JWTs_](https://youtu.be/TeBt0Ike_Tk?si=ua8exzVlrdtlj9FD).
 
 ## Prequisites
 
@@ -25,7 +25,11 @@ This is a Spring Security authentication server. The server enables users with t
 
 ### Personal Touches
 
-While following unknownkoder's tutorial, the Lombok dependency was installed to reduce the amount of overall boilerplate code that was written in the tutorial itself. This project is also configured to run within a Docker container.
+While following unknownkoder's tutorial, additional enhancements were made to the codebase:
+
+- The Lombok dependency was installed to reduce the amount of overall boilerplate code that was written during the tutorial.
+- The server is configured to run within a Docker container.
+- All endpoints are documented via Swagger.
 
 ## Getting Started
 
