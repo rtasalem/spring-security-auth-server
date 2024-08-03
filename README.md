@@ -37,3 +37,5 @@ While following unknownkoder's tutorial, additional enhancements were made to th
 docker compose build
 docker compose up -d
 ```
+
+To access the Swagger UI, visit the following endpoint: [localhost:8000/swagger-ui/index.html](http://localhost:8000/swagger-ui/index.html).
