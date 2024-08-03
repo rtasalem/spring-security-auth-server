@@ -5,11 +5,11 @@ import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 
 public class KeyGeneratedUtility {
-	
+
 	public static KeyPair generatedRsaKey() {
-		
+
 		KeyPair keyPair;
-		
+
 		try {
 			KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
 			keyPairGenerator.initialize(2048);
@@ -17,7 +17,7 @@ public class KeyGeneratedUtility {
 		} catch (Exception e) {
 			throw new IllegalSelectorException();
 		}
-		 
+
 		return keyPair;
 	}
 

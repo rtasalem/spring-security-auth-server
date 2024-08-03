@@ -5,5 +5,3 @@ services:
     container_name: spring-security-auth-server
     ports:
       - "8000:8000"
-    environment:
-      PORT: ${PORT:-8000}
