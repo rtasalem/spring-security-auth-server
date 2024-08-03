@@ -10,6 +10,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 @CrossOrigin("*")
 public class UserController {
 
+    /**
+     * Handles GET requests to the "/user/" endpoint.
+     *
+     * This method responds with a simple message indicating that the
+     * access level is "User". It serves as a basic check to verify that
+     * the user endpoint is accessible and functioning correctly.
+     *
+     * @return A {@link String} message stating "Access level: User".
+     */
     @GetMapping("/")
     public String welcomeUserController() {
         return "Access level: User";

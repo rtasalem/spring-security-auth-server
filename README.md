@@ -29,6 +29,7 @@ While following unknownkoder's tutorial, additional enhancements were made to th
 
 - The Lombok dependency was installed to reduce the amount of overall boilerplate code that was written during the tutorial.
 - The server is configured to run within a Docker container.
+- Java Docs to provide details of all API endpoints.
 
 ## Getting Started
 
